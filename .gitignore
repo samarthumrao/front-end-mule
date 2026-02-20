@@ -1,4 +1,30 @@
-/dashboard1.png
-/image.png
-/investigation.png
-/investigation1.png
+# Dependencies
+frontend/node_modules/
+backend/__pycache__/
+backend/app/__pycache__/
+
+# Build output
+frontend/dist/
+
+# Environment files
+frontend/.env.production
+frontend/.env.local
+
+# Backend runtime files
+backend/bucket/
+backend/backend.log
+backend/*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Design reference images (not needed in repo)
+dashboard1.png
+image.png
+investigation.png
+investigation1.png

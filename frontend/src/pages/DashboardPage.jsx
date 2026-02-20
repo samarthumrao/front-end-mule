@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import API_BASE from '../api';
 import Sidebar from '../components/Sidebar';
 import DashboardHeader from '../components/DashboardHeader';
 import CirclePackNetwork from '../components/CirclePackNetwork';
@@ -15,7 +16,7 @@ export default function DashboardPage() {
 
     useEffect(() => {
         // Fetch latest data on mount
-        axios.get('/api/data')
+        axios.get(`${API_BASE}/data`)
             .then(res => setData(res.data))
             .catch(err => console.error(err))
             .finally(() => setLoading(false));

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import { Plus, Minus, Scan, Filter, Layers, Download } from 'lucide-react';
+import API_BASE from '../api';
 
 export default function ForensicsCanvas({ suspectId }) {
     const svgRef = useRef(null);
@@ -57,7 +58,7 @@ export default function ForensicsCanvas({ suspectId }) {
             .attr('fill', '#94a3b8');
 
         // Fetch Data
-        fetch(`/api/investigation/network/${suspectId}`)
+        fetch(`${API_BASE}/investigation/network/${suspectId}`)
             .then(res => res.json())
             .then(data => {
                 if (!data || !data.nodes || data.nodes.length === 0) {

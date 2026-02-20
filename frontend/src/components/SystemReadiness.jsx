@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { BarChart3, CheckCircle2, Database, Lock, AlertTriangle } from 'lucide-react';
+import API_BASE from '../api';
 
 export default function SystemReadiness() {
     const [status, setStatus] = useState({
@@ -19,7 +20,7 @@ export default function SystemReadiness() {
 
     async function checkBackendHealth() {
         try {
-            const res = await fetch('/api/health');
+            const res = await fetch(`${API_BASE}/health`);
             if (res.ok) {
                 const data = await res.json();
                 setStatus({
@@ -85,8 +86,8 @@ export default function SystemReadiness() {
                 </div>
                 <span
                     className={`px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wider ${allOnline
-                            ? 'bg-green-50 text-success border border-green-200'
-                            : 'bg-red-50 text-danger border border-red-200'
+                        ? 'bg-green-50 text-success border border-green-200'
+                        : 'bg-red-50 text-danger border border-red-200'
                         }`}
                 >
                     {allOnline ? 'ONLINE' : 'WARNING'}

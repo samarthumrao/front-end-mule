@@ -1,5 +1,6 @@
 import { Search, Filter, ArrowRight, Loader } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import API_BASE from '../api';
 
 export default function InvestigationListPanel({ selectedId, onSelect }) {
     const [suspects, setSuspects] = useState([]);
@@ -10,7 +11,7 @@ export default function InvestigationListPanel({ selectedId, onSelect }) {
 
     useEffect(() => {
         setLoading(true);
-        fetch('/api/investigation/suspects')
+        fetch(`${API_BASE}/investigation/suspects`)
             .then(res => {
                 if (!res.ok) throw new Error('Failed to fetch suspects');
                 return res.json();

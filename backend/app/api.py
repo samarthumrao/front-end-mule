@@ -1,4 +1,5 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from app.validation import validate_csv
 from app.graph_builder import build_graph
@@ -13,6 +14,15 @@ from pathlib import Path
 import networkx as nx
 
 app = FastAPI()
+
+# CORS — allow frontend origins (local dev + deployed)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/health")
 def health():

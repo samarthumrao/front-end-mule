@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import API_BASE from '../api';
 import UploadArea from '../components/UploadArea';
 import SystemReadiness from '../components/SystemReadiness';
 import DataSchemaTable from '../components/DataSchemaTable';
@@ -18,7 +18,7 @@ export default function IngestionPage({ onAnalysisComplete }) {
             const formData = new FormData();
             formData.append('file', file);
 
-            const res = await fetch('/api/analyze', {
+            const res = await fetch(`${API_BASE}/analyze`, {
                 method: 'POST',
                 body: formData,
             });
