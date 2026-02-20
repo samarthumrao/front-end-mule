@@ -23,6 +23,15 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Docker files (kept locally, not pushed to GitHub)
+docker-compose.yml
+backend/Dockerfile.local
+backend/.dockerignore
+backend/Procfile
+frontend/Dockerfile.local
+frontend/.dockerignore
+frontend/nginx.conf
+
 # Design reference images (not needed in repo)
 dashboard1.png
 image.png

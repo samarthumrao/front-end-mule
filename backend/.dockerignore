@@ -1,6 +1,0 @@
-__pycache__/
-*.pyc
-bucket/
-backend.log
-*.csv
-.git
