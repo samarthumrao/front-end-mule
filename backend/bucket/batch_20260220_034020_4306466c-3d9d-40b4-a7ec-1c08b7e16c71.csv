@@ -1,0 +1,5 @@
+
+transaction_id,sender_id,receiver_id,amount,timestamp
+tx1,Alice,Bob,500,2026-01-01T10:00:00
+tx2,Bob,Charlie,490,2026-01-01T11:00:00
+tx3,Charlie,Alice,480,2026-01-01T12:00:00

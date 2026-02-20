@@ -1,0 +1,8 @@
+transaction_id,sender_id,receiver_id,amount,timestamp
+tx1,NodeA,NodeB,100,2026-01-01T10:00:00
+tx2,NodeB,NodeC,100,2026-01-01T10:05:00
+tx3,NodeC,NodeD,100,2026-01-01T10:10:00
+tx4,R1,R2,1000,2026-01-01T12:00:00
+tx5,R2,R3,1000,2026-01-01T12:05:00
+tx6,R3,R1,1000,2026-01-01T12:10:00
+tx7,R1,Tail,500,2026-01-01T12:15:00

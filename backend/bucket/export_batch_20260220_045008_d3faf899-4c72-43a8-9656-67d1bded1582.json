@@ -1,0 +1,47 @@
+{
+  "suspicious_accounts": [
+    {
+      "account_id": "A",
+      "suspicion_score": 50.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "PENDING_ASSOCIATION"
+    },
+    {
+      "account_id": "B",
+      "suspicion_score": 50.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "PENDING_ASSOCIATION"
+    },
+    {
+      "account_id": "C",
+      "suspicion_score": 50.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "PENDING_ASSOCIATION"
+    }
+  ],
+  "fraud_rings": [
+    {
+      "ring_id": "R-2024-100",
+      "member_accounts": [
+        "A",
+        "B",
+        "C",
+        "A"
+      ],
+      "pattern_type": "Circular",
+      "risk_score": 90.0
+    }
+  ],
+  "summary": {
+    "total_accounts_analyzed": 6,
+    "suspicious_accounts_flagged": 3,
+    "fraud_rings_detected": 1,
+    "processing_time_seconds": 2.3
+  }
+}

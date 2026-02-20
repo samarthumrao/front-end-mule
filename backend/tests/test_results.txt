@@ -1,0 +1,14 @@
+Starting Tests...
+
+--- TEST 1: Chronological Cycle with Commission ---
+Cycles Detected: [['A', 'B', 'C', 'A']]
+Commission Nodes: ['A', 'C', 'B']
+✅ TEST 1 PASSED
+
+--- TEST 2: Temporal Smurfing (Fan-In) ---
+Fan-In Detected: ['Mule1']
+✅ TEST 2 PASSED
+
+--- TEST 3: Layered Shell Networks ---
+Shell Chains Detected: [['Origin', 'S1', 'S2', 'S3', 'Dest']]
+✅ TEST 3 PASSED

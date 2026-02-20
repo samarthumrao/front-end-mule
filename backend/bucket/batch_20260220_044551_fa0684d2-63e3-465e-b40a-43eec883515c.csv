@@ -1,0 +1,6 @@
+transaction_id,sender_id,receiver_id,amount,timestamp
+tx_m1,Source1,MuleTarget,500,2026-01-02T10:01:00
+tx_m2,Source2,MuleTarget,500,2026-01-02T10:02:00
+tx_m3,Source3,MuleTarget,500,2026-01-02T10:03:00
+tx_m4,Source4,MuleTarget,500,2026-01-02T10:04:00
+tx_m5,Source5,MuleTarget,500,2026-01-02T10:05:00

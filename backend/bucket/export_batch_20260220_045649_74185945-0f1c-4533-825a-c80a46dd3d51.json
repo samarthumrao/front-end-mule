@@ -1,0 +1,56 @@
+{
+  "suspicious_accounts": [
+    {
+      "account_id": "RingA",
+      "suspicion_score": 50.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-100"
+    },
+    {
+      "account_id": "RingB",
+      "suspicion_score": 50.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-100"
+    },
+    {
+      "account_id": "RingC",
+      "suspicion_score": 50.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-100"
+    },
+    {
+      "account_id": "MuleX",
+      "suspicion_score": 50.0,
+      "detected_patterns": [
+        "high_velocity_smurfing",
+        "mule_account"
+      ],
+      "ring_id": "INDIVIDUAL_SUSPECT"
+    }
+  ],
+  "fraud_rings": [
+    {
+      "ring_id": "R-2024-100",
+      "member_accounts": [
+        "RingA",
+        "RingB",
+        "RingC",
+        "RingA"
+      ],
+      "pattern_type": "Circular",
+      "risk_score": 90.0
+    }
+  ],
+  "summary": {
+    "total_accounts_analyzed": 16,
+    "suspicious_accounts_flagged": 4,
+    "fraud_rings_detected": 1,
+    "processing_time_seconds": 2.3
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "suspicious_accounts": [
+    {
+      "account_id": "A1",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-100"
+    },
+    {
+      "account_id": "A2",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-100"
+    },
+    {
+      "account_id": "A3",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-100"
+    },
+    {
+      "account_id": "A4",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-100"
+    },
+    {
+      "account_id": "D1",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-101"
+    },
+    {
+      "account_id": "D2",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-101"
+    },
+    {
+      "account_id": "D3",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-101"
+    },
+    {
+      "account_id": "Z1",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-102"
+    },
+    {
+      "account_id": "Z2",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-102"
+    },
+    {
+      "account_id": "Z3",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-102"
+    },
+    {
+      "account_id": "Z4",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-102"
+    },
+    {
+      "account_id": "Z5",
+      "suspicion_score": 65.0,
+      "detected_patterns": [
+        "cycle_involved"
+      ],
+      "ring_id": "R-2024-102"
+    },
+    {
+      "account_id": "C1",
+      "suspicion_score": 50.0,
+      "detected_patterns": [
+        "high_velocity_smurfing",
+        "mule_account"
+      ],
+      "ring_id": "INDIVIDUAL_SUSPECT"
+    },
+    {
+      "account_id": "M2",
+      "suspicion_score": 50.0,
+      "detected_patterns": [
+        "high_velocity_smurfing",
+        "mule_account"
+      ],
+      "ring_id": "INDIVIDUAL_SUSPECT"
+    },
+    {
+      "account_id": "E1",
+      "suspicion_score": 15.0,
+      "detected_patterns": [
+        "high_velocity_smurfing"
+      ],
+      "ring_id": "INDIVIDUAL_SUSPECT"
+    },
+    {
+      "account_id": "B1",
+      "suspicion_score": 15.0,
+      "detected_patterns": [
+        "high_velocity_smurfing"
+      ],
+      "ring_id": "INDIVIDUAL_SUSPECT"
+    }
+  ],
+  "fraud_rings": [
+    {
+      "ring_id": "R-2024-100",
+      "member_accounts": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A1"
+      ],
+      "pattern_type": "Chain",
+      "risk_score": 100.0
+    },
+    {
+      "ring_id": "R-2024-102",
+      "member_accounts": [
+        "Z1",
+        "Z2",
+        "Z3",
+        "Z4",
+        "Z5",
+        "Z1"
+      ],
+      "pattern_type": "Chain",
+      "risk_score": 100.0
+    },
+    {
+      "ring_id": "R-2024-101",
+      "member_accounts": [
+        "D1",
+        "D2",
+        "D3",
+        "D1"
+      ],
+      "pattern_type": "Circular",
+      "risk_score": 90.0
+    }
+  ],
+  "summary": {
+    "total_accounts_analyzed": 106,
+    "suspicious_accounts_flagged": 16,
+    "fraud_rings_detected": 3,
+    "processing_time_seconds": 2.3
+  }
+}
