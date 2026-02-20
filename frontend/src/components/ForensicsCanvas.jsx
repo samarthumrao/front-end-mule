@@ -182,7 +182,7 @@ export default function ForensicsCanvas({ suspectId }) {
 
                 <div className="pointer-events-auto bg-white border border-gray-200 rounded-lg p-1 flex shadow-sm">
                     <button
-                        onClick={() => window.location.href = 'http://localhost:8001/export/json'}
+                        onClick={() => window.location.href = `${API_BASE}/export/json`}
                         className="px-3 py-1.5 text-xs font-semibold text-gray-500 hover:text-primary flex items-center gap-2"
                         title="Export Full Analysis"
                     >
