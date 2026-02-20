@@ -1,6 +1,8 @@
 services:
   backend:
-    build: ./backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.local
     container_name: rift-backend
     ports:
       - "8001:8001"
@@ -11,6 +13,7 @@ services:
   frontend:
     build:
       context: ./frontend
+      dockerfile: Dockerfile.local
       args:
         VITE_API_URL: "/api"
     container_name: rift-frontend
@@ -22,3 +25,5 @@ services:
 
 volumes:
   backend-data:
+
+
