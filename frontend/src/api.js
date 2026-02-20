@@ -1,5 +1,5 @@
 // Central API configuration
-// In development: Vite proxy handles /api → localhost:8001
+// In development: Vite proxy handles /api
 // In production: Use the deployed backend URL from environment variable
 
 const API_BASE = import.meta.env.VITE_API_URL || '/api';
